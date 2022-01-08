@@ -150,7 +150,7 @@ for i in range(len(times)):  # 开始挂机
                     driver.find_element_by_xpath('//*[@id="main-top"]/div[3]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/label/input').click()
                     driver.find_element_by_xpath('//*[@id="main-top"]/div[3]/div/div[2]/div[1]/div[1]/div/div/ul/li[2]/label/input').click()
                     string += "(按键2触发失败，已触发按键3)"
-            print(f"\r{string}                                     ", end='')
+            print(f"\r{string}", end='')
             if gtime < 0:
                 break
         print(f"\n{i+1}单元时长已达到")
