@@ -102,7 +102,7 @@ url = driver.current_url
 for i in range(len(times)):  # 开始挂机
     driver.implicitly_wait(10)
     if times[i] != '' and (int(times[i].split(':')[0])*60+int(times[i].split(':')[1])) < order*60:
-        time.sleep(2)
+        time.sleep(4)
         try:
             driver.find_element_by_xpath('//*[@id="menuBox"]/ul[' + str(i+1) + ']/li[2]/div[2]/div/span[2]/a/span').click()
         except :
